@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HEXAGON</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#files">Files</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to HEXAGON</h1>
+        <p>Your partner in success</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Company Name has been a leading provider of business solutions for over a decade. We are committed to delivering the highest quality services to our clients.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Service One</h3>
+            <p>We provide excellent service one to help you achieve your goals.</p>
+        </div>
+        <div class="service">
+            <h3>Service Two</h3>
+            <p>Our service two is designed to offer you unparalleled support.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required>
+            
+            <button type="submit">저장</button>
+        </form>
+    </section>
+
+    <section id="files">
+        <h2>Uploaded Files</h2>
+        <form id="searchForm">
+            <label for="search">Search Files:</label>
+            <input type="text" id="search" name="search" placeholder="Enter filename">
+            <button type="submit">검색</button>
+        </form>
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Filename</th>
+                    <th>Path</th>
+                    <th>Mimetype</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 파일 목록이 여기 표시됩니다. -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
